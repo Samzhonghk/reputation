@@ -1,0 +1,255 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+body{
+    background: #222;
+    overflow-x: hidden;
+}
+h2,h3{ color: #9b7f36;}
+h2.logo{ color: #b07406; font-size:45px; margin-left:45px; margin-top:50px; font-family:sans-serif; }
+.container h3{ color:#b77713; }
+button{ margin-top:90px; }
+
+.header{ padding: 20px 40px;}
+
+.timeline{ 
+    color: #fff;
+}
+.timeline ul{}
+.timeline li{ 
+    position: relative;    
+    width: 14%;
+    
+}
+
+.timeline li span.line{ 
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 25px;
+    right: 63%;
+    z-index: -1;
+    background: #bbb;
+    border-radius: 5px;
+}
+.timeline li span.circle{    
+    background: #bbb;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.timeline li span i{ margin-top: 18px; font-size:20px; }
+.timeline li span.text {
+    display: grid;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.timeline li span.text.unactive{ color:silver; }
+
+.timeline li.active span.line{ 
+    background: #f5a125;
+}
+.timeline li.active span.circle{    
+    background: #f5a125;
+}
+
+.timeline li.firstline.active{
+        margin-left: 300px;
+}
+
+.container {
+    width: 85%;
+    padding: 40px 7px 110px 110px;
+    margin: 30px auto 100px;
+    background: #fff;
+    border-radius: 5px; 
+}
+fieldset {
+    border-top: 1px solid silver;
+    width: 90%;
+}
+legend {
+    display: inline-block;
+    border: 0;
+    width: auto;
+    padding-right: 20px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.leftside{
+    width: 370px;
+    float: left;
+}
+.rightside{
+    width: 370px;
+    float: left;
+    margin-left: 70px;
+}
+.leftpedding{ padding: 0; width:21%; }
+.rightpedding{ padding: 0; width:29%; }
+label{ font-size: 13px; font-weight: normal;}
+
+
+.rail-select {
+    position: relative;
+}
+.rail-select select {
+}
+.rail-select select:focus {
+    outline: none;
+    box-shadow: none;
+    border: solid 1px grey;
+}
+.rail-select .select-side {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    border-radius: 0px 3px 3px 0px;       
+    pointer-events: none;
+}
+.rail-select .select-side:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+    /* or 100px */
+}
+.rail-select .select-side i {
+    left: 30%;
+    top: 5px;
+}
+.rail-select .select-side i.blue {
+    color: #ff8100;
+    background: #fff;
+    padding: 6px;
+}
+
+/*** double arrow***/
+.rail-select-double {
+    position: relative;
+}
+.rail-select-double select:focus {
+    outline: none;
+    box-shadow: none;
+    border: solid 1px grey;
+}
+.rail-select-double .select-side-up {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    border-radius: 0px 3px 3px 0px;       
+    pointer-events: none;
+}
+.rail-select-double .select-side-down {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 0px 3px 3px 0px;       
+    pointer-events: none;
+}
+.rail-select-double .select-side-up:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+}
+.rail-select-double .select-side-down:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+}
+.rail-select-double .select-side-up i {
+    left: 30%;
+    top: 5px;
+}
+.rail-select-double .select-side-down i {
+    left: 30%;
+    top: 5px;
+}
+.rail-select-double .select-side-up i.blue {
+    color: #ff8100;
+    background: #fff;
+    padding: 0 6px;
+}
+.rail-select-double .select-side-down i.blue {
+    color: #ff8100;
+    background: #fff;
+    padding: 0 6px;
+}
+
+.btnwidth { width: 100px;}
+#btn-cancel{ margin-right: 70px; color: #fff; background: #bbb; }
+
+
+
+@media only screen and (max-width:1200px){
+    /*.container{ padding:15px; }*/
+    .timeline li{ 
+        font-size: 12px;
+    }
+    .leftside{
+        width: 50%;
+        float: left;
+    }
+    .rightside{
+        width: 44%;
+        float: left;
+        margin-left: 6%;
+    }
+    .leftpedding{ padding: 0;}
+    .rightpedding{ padding: 0;}
+}
+
+
+    /*#btn-cancel{ margin:0; }*/
+@media only screen and (max-width:940px){
+    .container{ padding:15px; }
+    fieldset{ width:100%; }
+    .timeline li{ 
+        width: 17%;
+    }
+}
+@media only screen and (max-width:746px){
+    .timeline li.firstline{ 
+        width: 40%;
+        margin-bottom: 15px;
+    }
+    .timeline li.firstline:first-child{
+        margin-left: 15%;
+    }
+
+    .timeline li.secondline{ 
+        width: 29%;
+    }
+    .timeline li span.line{ 
+        width: 80%;
+        right: 61%;
+    }
+    .leftside{
+        width: 100%;
+        float: left;
+    }
+    .rightside{
+        width: 100%;
+        float: left;
+        margin-left: 0;
+    }
+
+    #btn-cancel{ margin-top:30px; margin-right:-100px; }
+    h2.logo{ margin:30px 75px; text-align:center; }
+    .rightpedding input.form-control{ padding: 0;}
+    .timeline li span.text{ font-size:14px; }
+}
+
