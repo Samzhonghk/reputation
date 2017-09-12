@@ -7,10 +7,15 @@
         color:#ffffff;
     }
 
+    span, p, td{
+        font-size: 13px;
+    }
+
+
     .container{ 
         background:#000000;
         height:90%;
-        width:90%;
+        width:97%;
         border-radius:10px;
         margin:20px auto;
         opacity: 0.5;
@@ -50,7 +55,7 @@
     .description{
         margin: 30px auto;
         font-size:12.5px;
-        width:90%;
+        /*width:90%;*/
     }
 
     .list-group{
@@ -62,6 +67,7 @@
         background-color:transparent;
         border-radius:0;
         border:0;
+        padding: 5px 10px;
     }
 
     .list-group-item h5:before{
@@ -73,13 +79,30 @@
         border-right:1px solid;
     }
 
-    .top tr:first-child{
+    /*.top tr:first-child{
         background: #c8bbbb;
         opacity: 0.9;
         z-index:-100;       
-    }
+    }*/
 
     .top tr:first-child td{
         border-top: 1px solid #ffd800;
         border-bottom: 1px solid #ffd800;
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .text-right p:first-child{
+        line-height: 2em;
+    }
+
+    .list-group-item span{
+        color: #ffffff;
+    }
+
+    .list-group li{
+        list-style: disc;
+    }
+
+    .list-title span{
+        color: #ffd800;
     }
